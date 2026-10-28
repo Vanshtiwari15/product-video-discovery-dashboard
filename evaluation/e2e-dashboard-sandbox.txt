@@ -1,0 +1,18 @@
+PASS  progress timeline appears for "hydrogen snowboard"
+PASS  demo banner is shown for synthetic data
+PASS  product panel shows title and image
+PASS  Instagram tab count matches visible cards  (tab 2, cards 2)
+PASS  shortfall against 20 is explained when below target  (2 notices)
+PASS  Meta tab count matches visible cards
+PASS  All sources tab sums both sources
+PASS  below-threshold toggle reveals low matches  (7 -> 168)
+PASS  min score filter applies  (5 cards, min 62)
+PASS  newest-first sort orders by date  (168 dated cards)
+PASS  "Why this score" lists the evidence
+PASS  progress timeline appears for "hydrogen snowboard"
+PASS  repeat search hides previously seen videos until toggled  (1 hidden, cards 0 -> 84, 2 "Seen before" badges)
+PASS  history lists both searches
+PASS  unsafe URL shows a clear error
+PASS  no uncaught page errors
+
+16/16 checks passed

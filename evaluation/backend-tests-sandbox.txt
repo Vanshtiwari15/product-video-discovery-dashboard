@@ -1,0 +1,96 @@
+# Subtest: rejects invalid input with structured errors
+ok 1 - rejects invalid input with structured errors
+# Subtest: one failing source does not break the search (partial success)
+ok 2 - one failing source does not break the search (partial success)
+# Subtest: a repeat search returns new videos and keeps old ones behind previouslySeen
+ok 3 - a repeat search returns new videos and keeps old ones behind previouslySeen
+# Subtest: history is persisted and survives reopening the database
+ok 4 - history is persisted and survives reopening the database
+# Subtest: progress stream replays the final state for finished searches
+ok 5 - progress stream replays the final state for finished searches
+# Subtest: successful run: polls to completion, reads the dataset, reports usage and passes maxItems
+ok 6 - successful run: polls to completion, reads the dataset, reports usage and passes maxItems
+# Subtest: a timed-out run keeps its partial results; an empty timed-out run is a retryable error
+ok 7 - a timed-out run keeps its partial results; an empty timed-out run is a retryable error
+# Subtest: our source timeout aborts the Apify run so it stops billing
+ok 8 - our source timeout aborts the Apify run so it stops billing
+# Subtest: input field names follow the live actor schema
+ok 9 - input field names follow the live actor schema
+# Subtest: normalisers accept documented Instagram and Meta item shapes and reject non-video items
+ok 10 - normalisers accept documented Instagram and Meta item shapes and reject non-video items
+# Subtest: video keys prefer platform IDs and fall back to a normalised URL hash
+ok 11 - video keys prefer platform IDs and fall back to a normalised URL hash
+# Subtest: exact duplicates inside one search are removed
+ok 12 - exact duplicates inside one search are removed
+# Subtest: videos shown by earlier searches are flagged as previously seen
+ok 13 - videos shown by earlier searches are flagged as previously seen
+# Subtest: the same ad copy from the same page under a new ID is a near duplicate
+ok 14 - the same ad copy from the same page under a new ID is a near duplicate
+# Subtest: re-uploads are near duplicates; same layout in different colours is not
+ok 15 - re-uploads are near duplicates; same layout in different colours is not
+# Subtest: repeat searches rotate the query plan so new queries run first
+ok 16 - repeat searches rotate the query plan so new queries run first
+# Subtest: JSON-LD Product inside @graph wins and relative image URLs are resolved
+ok 17 - JSON-LD Product inside @graph wins and relative image URLs are resolved
+# Subtest: falls back to Open Graph when JSON-LD is invalid
+ok 18 - falls back to Open Graph when JSON-LD is invalid
+# Subtest: reads Amazon product markup
+ok 19 - reads Amazon product markup
+# Subtest: bot-check pages raise BLOCKED instead of returning junk
+ok 20 - bot-check pages raise BLOCKED instead of returning junk
+# Subtest: URL words fallback ignores IDs and path noise
+ok 21 - URL words fallback ignores IDs and path noise
+# Subtest: frame sampler extracts frames from a real video and the scorer keeps the best frame
+ok 22 - frame sampler extracts frames from a real video and the scorer keeps the best frame
+# Subtest: frame sampling failure falls back to the cover image and says so
+ok 23 - frame sampling failure falls back to the cover image and says so
+# Subtest: retries 5xx with backoff and succeeds
+ok 24 - retries 5xx with backoff and succeeds
+# Subtest: honours Retry-After on 429
+ok 25 - honours Retry-After on 429
+# Subtest: does not retry auth errors and reports them clearly
+ok 26 - does not retry auth errors and reports them clearly
+# Subtest: times out slow requests and retries them
+ok 27 - times out slow requests and retries them
+# Subtest: withRetry gives up immediately on non-retryable errors
+ok 28 - withRetry gives up immediately on non-retryable errors
+# Subtest: top-up: keeps fetching until the target is met, skipping duplicates and low matches
+ok 29 - top-up: keeps fetching until the target is met, skipping duplicates and low matches
+# Subtest: product analysis and product pages are cached
+ok 30 - product analysis and product pages are cached
+# Subtest: cosine mapping is clamped to 0..1
+ok 31 - cosine mapping is clamped to 0..1
+# Subtest: visual score weights depend on the backend and on having a reference photo
+ok 32 - visual score weights depend on the backend and on having a reference photo
+# Subtest: final score blends visual and VLM scores and stays within 0..100
+ok 33 - final score blends visual and VLM scores and stays within 0..100
+# Subtest: threshold classification
+ok 34 - threshold classification
+# Subtest: caption matches are reported but only as text evidence
+ok 35 - caption matches are reported but only as text evidence
+# Subtest: scorer ranks a near-identical thumbnail above an unrelated one and explains both
+ok 36 - scorer ranks a near-identical thumbnail above an unrelated one and explains both
+# Subtest: query plan never emits attribute-only queries without a product type
+ok 37 - query plan never emits attribute-only queries without a product type
+# Subtest: blocks internal, private and malformed URLs
+ok 38 - blocks internal, private and malformed URLs
+# Subtest: allows public product URLs
+ok 39 - allows public product URLs
+# Subtest: isPublicIp classifies ranges
+ok 40 - isPublicIp classifies ranges
+# Subtest: connect-time lookup refuses hostnames that resolve to private addresses
+ok 41 - connect-time lookup refuses hostnames that resolve to private addresses
+# Subtest: parseSearchInput separates keywords from URLs and validates both
+ok 42 - parseSearchInput separates keywords from URLs and validates both
+# Subtest: only ambiguous candidates go to Claude; verdicts, formula and token usage are recorded
+ok 43 - only ambiguous candidates go to Claude; verdicts, formula and token usage are recorded
+# Subtest: a failed Claude call keeps the visual score and records why
+ok 44 - a failed Claude call keeps the visual score and records why
+# tests 44
+# suites 0
+# pass 44
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11351.849429

@@ -1,0 +1,7 @@
+[
+  { "name": "Keyword: graphic tee", "query": "oversized graphic tee" },
+  { "name": "Keyword: protein chocolate", "query": "protein dark chocolate" },
+  { "name": "Keyword + photo: tumbler", "query": "stanley quencher tumbler", "image": "./evaluation/images/tumbler.jpg" },
+  { "name": "Shopify product link", "query": "https://hydrogen-preview.myshopify.com/products/the-zenith" },
+  { "name": "Amazon or brand product link", "query": "https://REPLACE-WITH-A-PRODUCT-URL" }
+]

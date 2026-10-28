@@ -1,0 +1,35 @@
+{
+  "name": "pvd-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test \"test/**/*.test.js\"",
+    "verify:clip": "node scripts/verify-clip.mjs",
+    "verify:sources": "node scripts/verify-sources.mjs",
+    "benchmark:brain": "node scripts/benchmark-brain.mjs",
+    "evaluate": "node scripts/evaluate.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ipaddr.js": "^2.2.0",
+    "multer": "^2.0.2",
+    "pino": "^9.6.0",
+    "sharp": "^0.33.5",
+    "undici": "^6.21.0",
+    "zod": "^3.24.1"
+  },
+  "optionalDependencies": {
+    "@huggingface/transformers": "^3.2.4",
+    "ffmpeg-static": "^5.2.0"
+  }
+}
